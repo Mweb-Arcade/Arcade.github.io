@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #f6aebe;
+}
+
+.containerNav{
+    filter: brightness(150%);
+
+    height: fit-content;
+}
+
+#navkey{
+    padding-left: 20px;
+    align-self: center;
+    font-size: larger;
+}
+
+.nav{
+    background-color: #232128;
+    background-size: contain;
+    height: fit-content;
+    width: 100%;
+    color: #a4747f;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav a{
+    color: #a4747f;
+    text-decoration: none;
+}
+
+.center{
+    position: absolute;
+    align-self: center;
+    right: 15%;
+    display: flex;
+    height: 50px;
+}
+
+
+.logo{
+    background-image: url("../../Assets/Logo/index.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.pacman{
+    overflow: hidden;
+    position: absolute;
+    right: 2%;
+    width: 100px;
+    height: 175px;
+    align-items: center;
+}
+
+.dropbtn{
+    position: relative;
+    left: 20%;
+    background-image: url("../../Assets/Logo/pacman.png");    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #232128;
+    border: #232128;
+    color: #a4747f;
+    width: 50px;
+    height: 50px;
+}
+
+.dropdown-content {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #232128;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: #a4747f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #3B3844;}
+  
+.pacman:hover .dropdown-content {display: block;}
+  
+.pacman:hover .pacman {height: 150px;}
